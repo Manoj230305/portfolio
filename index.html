@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Web Design, Web Development, Portfolio, Freelancer, HTML5, CSS3, JavaScript, jQuery, Bootstrap4, Responsive, Template">
+    <meta name="description" content="MEP - Personal Portfolio">
+    <meta name="author" content="">
+
+    <!-- Title  -->
+    <title>MEP</title>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/imgs/apple-touch-icon.png">
+    <link rel="android-chrome" sizes="192x192" href="assets/imgs/android-chrome-192x192.png">
+    <link rel="favicon" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body class="home-freelancer">
+
+
+
+    <!-- ==================== Start Loading ==================== -->
+
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+
+        <div class="loader-wrap-heading">
+            <div class="load-text">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== End Loading ==================== -->
+
+
+    <div class="cursor"></div>
+    <div class="blur-div"></div>
+
+
+    <!-- ==================== Start progress-scroll-button ==================== -->
+
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- ==================== End progress-scroll-button ==================== -->
+
+
+
+    <!-- ==================== Start Navbar ==================== -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container align-items-center">
+
+            <!-- Logo -->
+            <a class="logo w-100px" href="#">
+                <span class="logo-text">MEP.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" onclick="window.smoother.scrollTo('#home'); $('#navbarSupportedContent').collapse('hide'); return false;"><span class="rolling-text">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" onclick="window.smoother.scrollTo('#about'); $('#navbarSupportedContent').collapse('hide'); return false;"><span class="rolling-text">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" onclick="window.smoother.scrollTo('#services'); $('#navbarSupportedContent').collapse('hide'); return false;"><span class="rolling-text">Services</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works" onclick="window.smoother.scrollTo('#works'); $('#navbarSupportedContent').collapse('hide'); return false;"><span class="rolling-text">Works</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog" onclick="window.smoother.scrollTo('#blog'); $('#navbarSupportedContent').collapse('hide'); return false;"><span class="rolling-text">Blog</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" onclick="window.smoother.scrollTo('#contact'); $('#navbarSupportedContent').collapse('hide'); return false;"><span class="rolling-text">Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dark-mode-icon">
+                <button type="button" class="theme-icon">
+                    <i aria-hidden="true" class="pe-7s-moon moon" title="Toggle between dark and light mode"></i>
+                    <i aria-hidden="true" class="pe-7s-sun sun" title="Toggle between dark and light mode"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== End Navbar ==================== -->
+
+
+    <div id="smooth-wrapper">
+
+        <div id="smooth-content">
+
+            <main class="o-hidden">
+
+                <!-- ==================== Start Header ==================== -->
+
+                <header class="hero-style7 position-relative" id="home">
+                    <canvas id="glcanvas"></canvas>
+                    <div class="container position-relative z-index-2">
+                        <div class="row">
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div class="caption">
+                                    <h1>Hello!<br>I'm Manoj.</h1>
+                                    <a href="#works" onclick="window.smoother.scrollTo('#works');" class="butn-arrow butn-rounded mt-50px">
+                                        <span class="text-uppercase fs-14 fw-500">View Projects</span>
+                                        <span class="arrow-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                </path>
+                                            </svg>
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="position-relative img">
+                                    <div class="fit-img h-650px o-hidden">
+                                        <img src="assets/imgs/IMG_0920.PNG" alt="">
+                                    </div>
+                                    <div class="exp d-flex align-items-center" data-speed="0.9" data-lag="0">
+                                            <h6 class="mb-0 text-uppercase">Open to Work </h6>
+                                            <span class="status-dot ml-15px"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 offset-lg-1 text-align-right pb-50px pt-50px">
+                                <div class="v-align-between h-100">
+                                    <p class="fs-16 mb-80px">A passionate web designer with a knack for turning ideas
+                                        into
+                                        visually stunning, user-friendly websites.</p>
+                                    <ul class="rest">
+                                        <li class="hover-this cursor-pointer mb-15px">
+                                            <a href="#0" class="hover-anim">LinkedIn</a>
+                                        </li>
+                                        <li class="hover-this cursor-pointer mb-15px">
+                                            <a href="#0" class="hover-anim">Facebook</a>
+                                        </li>
+                                        <li class="hover-this cursor-pointer mb-15px">
+                                            <a href="#0" class="hover-anim">Instagram</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- ==================== End Header ==================== -->
+
+                <!-- ==================== Start Services ==================== -->
+
+                <section class="services-reval pb-100px" id="services">
+                    <div class="container">
+                        <div class="sec-head bord mb-80px" data-ui-animate data-delay="0.2">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h6 class="text-uppercase">Services</h6>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div>
+                                        <h2 class="fs-60 text-uppercase">
+                                            <span class="opacity-7 d-inline">featured Services</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 d-flex justify-content-end">
+                                    <div>
+                                        <a href="#contact" onclick="window.smoother.scrollTo('#contact');" class="butn-more d-flex align-items-center">
+                                            <span class="text-uppercase fs-14 fw-500">Hire Me</span>
+                                            <span class="arrow-icon">
+                                                <svg viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                    </path>
+                                                </svg>
+                                                <svg viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 01 -->
+                        <div class="item-row hover-reveal-item position-relative pb-30px line-bottom border-color-transparent-white-light"
+                            data-ui-animate data-delay="0.3">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 md-mb30">
+                                    <div>
+                                        <span>01</span>
+                                        <span class="fs-40 fw-500 ml-30px">
+                                            <a href="#">UI/UX Design</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-8">
+                                    <div>
+                                        <ul class="rest fs-14">
+                                            <li class="mb-10px">+ Responsive UI Design</li>
+                                            <li class="mb-10px">+ User Flow & Wireframes</li>
+                                            <li>+ Accessibility Optimization</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-4 d-flex justify-content-end">
+                                    <a href="#">
+                                        <span class="arrow-icon">
+                                            <svg viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="award-reveal-img bg-img" data-background="assets/imgs/serv/uiux.png"></div>
+                        </div>
+
+                        <!-- 02 -->
+                        <div class="item-row hover-reveal-item position-relative pb-30px pt-30px line-bottom border-color-transparent-white-light"
+                            data-ui-animate data-delay="0.4">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 md-mb30">
+                                    <div>
+                                        <span>02</span>
+                                        <span class="fs-40 fw-500 ml-30px">
+                                            <a href="#">SEO</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-8">
+                                    <div>
+                                        <ul class="rest fs-14">
+                                            <li class="mb-10px">+ SEO-Friendly Code</li>
+                                            <li class="mb-10px">+ Performance Optimization</li>
+                                            <li>+ Core Web Vitals</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-4 d-flex justify-content-end">
+                                    <a href="#">
+                                        <span class="arrow-icon">
+                                            <svg viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="award-reveal-img bg-img" data-background="assets/imgs/serv/SEO.png"></div>
+                        </div>
+
+                        <!-- 03 -->
+                        <div class="item-row hover-reveal-item position-relative pb-30px pt-30px line-bottom border-color-transparent-white-light"
+                            data-ui-animate data-delay="0.5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 md-mb30">
+                                    <div>
+                                        <span>03</span>
+                                        <span class="fs-40 fw-500 ml-30px">
+                                            <a href="#">Branding</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-8">
+                                    <div>
+                                        <ul class="rest fs-14">
+                                            <li class="mb-10px">+ Website Branding</li>
+                                            <li class="mb-10px">+ Design System Setup</li>
+                                            <li>+ Visual Consistency</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-4 d-flex justify-content-end">
+                                    <a href="#">
+                                        <span class="arrow-icon">
+                                            <svg viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="award-reveal-img bg-img" data-background="assets/imgs/serv/s3.jpg"></div>
+                        </div>
+
+                        <!-- 04 -->
+                        <div class="item-row hover-reveal-item position-relative pb-30px pt-30px line-bottom border-color-transparent-white-light"
+                            data-ui-animate data-delay="0.6">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 md-mb30">
+                                    <div>
+                                        <span>04</span>
+                                        <span class="fs-40 fw-500 ml-30px">
+                                            <a href="#">3D & Motion</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-8">
+                                    <div>
+                                        <ul class="rest fs-14">
+                                            <li class="mb-10px">+ Futuristic Animations</li>
+                                            <li class="mb-10px">+ Interactive Effects</li>
+                                            <li>+ Smooth Transitions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-4 d-flex justify-content-end">
+                                    <a href="#">
+                                        <span class="arrow-icon">
+                                            <svg viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="award-reveal-img bg-img" data-background="assets/imgs/serv/3d.gif"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ==================== End Services ==================== -->
+
+
+
+                <!-- ==================== Start Works ==================== -->
+
+                <section class="portfolio-style3 p-0" id="works">
+                    <div class="container">
+                        <div class="cardStacking">
+                            <div class="cardStacking__cards">
+
+                                <div class="stackCard mb-40px">
+                                    <div class="text-align-center lg-text text-uppercase">
+                                        <h2>Works</h2>
+                                    </div>
+                                </div>
+
+                                <div class="stackCard mb-20px">
+                                    <div class="item fit-img h-600px border-radius-30px o-hidden position-relative">
+                                        <img src="assets/imgs/works/l1.png" alt="">
+                                        <div class="buttons d-flex" style="position: absolute; top: 30px; right: 30px; z-index: 2;">
+                                            <a href="https://gitlab.com/nex_gen_dev/nexgen-dev-production.git" target="_blank" class="btn btn-sm mr-2" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="GitHub"><i class="fab fa-gitlab"></i></a>
+                                            <a href="https://nexgendev.in/" class="btn btn-sm" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                                        </div>
+                                        <div class="text">
+                                            <h2><a href="https://nexgendev.in/">NexGen Dev</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="stackCard mb-20px">
+                                    <div class="item fit-img h-600px border-radius-30px o-hidden position-relative">
+                                        <img src="assets/imgs/works/m2.jpg" alt="">
+                                        <div class="buttons d-flex" style="position: absolute; top: 30px; right: 30px; z-index: 2;">
+                                            <a href="https://gitlab.com/nex_gen_dev/oyilphotography.git" target="_blank" class="btn btn-sm mr-2" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="GitHub"><i class="fab fa-gitlab"></i></a>
+                                            <a href="https://www.oyilphotography.com/" class="btn btn-sm" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                                        </div>
+                                        <div class="text">
+                                            <h2><a href="https://www.oyilphotography.com/">Oyil <br> Photography</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stackCard mb-20px">
+                                    <div class="item fit-img h-600px border-radius-30px o-hidden position-relative">
+                                        <img src="assets/imgs/works/m9.png" alt="">
+                                        <div class="buttons d-flex" style="position: absolute; top: 30px; right: 30px; z-index: 2;">
+                                            <a href="https://gitlab.com/nex_gen_dev/mayilon.git" target="_blank" class="btn btn-sm mr-2" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="GitHub"><i class="fab fa-gitlab"></i></a>
+                                            <a href="https://mayilontours.com/" class="btn btn-sm" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="Website"><i class="fas fa-external-link-alt"></i></a>
+                                        </div>
+                                        <div class="text">
+                                            <h2><a href="https://mayilontours.com/">Mayilon <br> Tours & Travels</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stackCard">
+                                    <div class="item fit-img h-600px border-radius-30px o-hidden position-relative">
+                                        <img src="assets/imgs/works/g5.png" alt="">
+                                        <div class="buttons d-flex" style="position: absolute; top: 30px; right: 30px; z-index: 2;">
+                                            <a href="https://github.com/Manoj230305/web-Green.git" class="btn btn-sm mr-2" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="GitHub"><i class="fab fa-github"></i></a>
+                                            <a href="https://play.google.com/store/apps/details?id=com.greenchat.snap&pcampaignid=web_share" target="_blank" class="btn btn-sm" style="padding: 10px 20px; background: rgba(40, 40, 40, 0.3); backdrop-filter: blur(10px); border-radius: 30px; font-size: 14px; color: white;" title="Website"><i class="fab fa-google-play"></i></a>
+                                        </div>
+                                        <div class="text">
+                                            <h2><a href="https://play.google.com/store/apps/details?id=com.greenchat.snap&pcampaignid=web_share">Green O' <br> Chat</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==================== End Works ==================== -->
+
+
+
+                <!-- ==================== Start intro ==================== -->
+
+                <section class="intro-style2 position-relative" id="about">
+                    <div class="container">
+                        <div class="row" data-ui-animate data-delay="0.2">
+                            <div class="col-lg-4">
+                                <div class="sec-head mb-80px">
+                                    <h6 class="text-uppercase">About me</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>
+                                    <h2 class="text-indent fs-40">I’m a passionate frontend developer who loves building modern, visually stunning websites with smooth animations and engaging user experiences.
+                                    </h2>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 offset-lg-2 col-md-6 col-10">
+                                <div class="mt-80px">
+                                    <h6 class="fs-20"><span class="d-inline main-color">We believe a website isn’t just
+                                            a
+                                            digital presence</span> — it’s a powerful tool
+                                        that tells your story.</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 offset-lg-1">
+                                <div class="row mt-80px">
+                                    <div class="col-sm-6 sm-mb15">
+                                        <ul class="rest">
+                                            <li class="mb-15px">Innovations</li>
+                                            <li class="mb-15px">Excellence</li>
+                                            <li class="mb-15px">Creativity</li>
+                                            <li class="mb-15px">Experience</li>
+                                            <li>Passion</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="rest">
+                                            <li class="mb-15px">Competence</li>
+                                            <li class="mb-15px">Web design</li>
+                                            <li class="mb-15px">Development</li>
+                                            <li class="mb-15px">User Satisfaction</li>
+                                            <li>Branding</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills row md-marg justify-content-center mt-50px" data-ui-animate data-delay="0.4">
+                            <div class="col-lg col-md-4 col-6">
+                                <div class="item-skill sub-bg text-align-center mt-30px">
+                                    <span class="w-70px mb-30px"><img src="assets/imgs/skills/s1.png" alt=""></span>
+                                    <h5 class="text-uppercase mb-30px">Figma</h5>
+                                    <!-- <span class="text-uppercase">Figma</span> -->
+                                </div>
+                            </div>
+                            <div class="col-lg col-md-4 col-6">
+                                <div class="item-skill sub-bg text-align-center mt-30px">
+                                    <span class="w-70px mb-30px"><img src="assets/imgs/skills/s2.png" alt=""></span>
+                                    <h6 class="text-uppercase mb-30px">HTML/CSS</h6>
+                                    <span class="text-uppercase"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg col-md-4 col-6">
+                                <div class="item-skill sub-bg text-align-center mt-30px">
+                                    <span class="w-70px mb-30px"><img src="assets/imgs/js.png" alt=""></span>
+                                    <h5 class="text-uppercase mb-30px">JavaScript</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg col-md-4 col-6">
+                                <div class="item-skill sub-bg text-align-center mt-30px">
+                                    <span class="w-70px mb-30px"><img src="assets/imgs/reactnew.png" alt=""></span>
+                                    <h5 class="text-uppercase mb-30px">React</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg col-md-4 col-6">
+                                <div class="item-skill sub-bg text-align-center mt-30px">
+                                    <span class="w-70px mb-30px"><img src="assets/imgs/ts.webp" alt=""></span>
+                                    <h5 class="text-uppercase mb-30px">TypeScript</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="shape-bottom-left w-250px opacity-5" data-speed="0.7" data-lag="0">
+                        <img src="assets/imgs/mshap1.png" alt="">
+                    </div>
+                </section>
+                
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-789f564 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="789f564">
+                    <div class="elementor-container elementor-column-gap-no">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-913d763" data-element_type="column" data-id="913d763">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-779b752 elementor-widget elementor-widget-aixor-our-partner" data-element_type="widget" data-id="779b752" data-widget_type="aixor-our-partner.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="our-partner-sec">
+                                            <ul class="tech-stack-list">
+                                                <li><i class="devicon-linux-plain"></i><p>MEP</p></li>
+                                                <li><i class="devicon-apache-plain"></i><p>Apache</p></li>
+                                                <li><i class="devicon-mysql-plain"></i><p>MySQL</p></li>
+                                                <li><i class="devicon-php-plain"></i><p>PHP</p></li>
+                                                <li><i class="devicon-html5-plain"></i><p>HTML5</p></li>
+                                                <li><i class="devicon-css3-plain"></i><p>CSS3</p></li>
+                                                <li><i class="devicon-javascript-plain"></i><p>JavaScript</p></li>
+                                                <li><i class="devicon-bootstrap-plain"></i><p>Bootstrap</p></li>
+                                                <li><i class="devicon-csharp-plain"></i><p>C#</p></li>
+                                                <li><i class="devicon-microsoftsqlserver-plain"></i><p>SQL Server</p></li>
+                                                <li><i class="devicon-dot-net-plain"></i><p>.NET</p></li>
+                                                <li><i class="devicon-azure-plain"></i><p>Azure</p></li>
+                                                <li><i class="devicon-vscode-plain"></i><p>VS Code</p></li>
+                                                <li><i class="devicon-docker-plain"></i><p>Docker</p></li>
+                                                <li><i class="devicon-composer-plain"></i><p>Composer</p></li>
+                                                <li><i class="devicon-git-plain"></i><p>Git</p></li>
+                                                <li><i class="devicon-github-plain"></i><p>GitHub</p></li>
+                                                <li><i class="devicon-nginx-plain"></i><p>NGINX</p></li>
+                                                <li><i class="devicon-vagrant-plain"></i><p>Vagrant</p></li>
+                                                <li><i class="devicon-visualstudio-plain"></i><p>Visual Studio</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+
+                <!-- ==================== End intro ==================== -->
+
+
+
+                <!-- ==================== Start Section ==================== -->
+
+                <div class="main-marq sm-pad blur-bg border-radius-50px o-hidden pt-20px pb-20px">
+                    <div class="slide-har st1">
+                        <div class="box d-flex align-items-center non-strok">
+                            <div class="item">
+                                <h5>Interactive design</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Editorial</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Web experience</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>UI/UX</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Web design</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Branding</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box d-flex align-items-center non-strok">
+                            <div class="item">
+                                <h5>Interactive design</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Editorial</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Web experience</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>UI/UX</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Web design</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h5>Branding</h5>
+                            </div>
+                            <div class="item">
+                                <div class="w-20px">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"
+                                        fill="currentColor">
+                                        <path fill="currentColor" d="M78.4,38.4c0,0-11.8,0-15.8,0c-1.6,0-4.8-0.2-7.1-0.8c-2.3-0.6-4.3-0.8-6.3-2.4c-2-1.2-3.5-3.2-4.7-4.8
+                                          c-1.2-1.6-1.6-3.6-2-5.5c-0.3-1.5-0.7-4.3-0.8-5.9c-0.2-4.3,0-17.4,0-17.4C41.8,0.8,41,0,40.2,0s-1.6,0.8-1.6,1.6c0,0,0,13.1,0,17.4
+                                          c0,1.6-0.6,4.3-0.8,5.9c-0.3,2-0.8,4-2,5.5c-1.2,2-2.8,3.6-4.7,4.8s-4,1.8-6.3,2.4c-1.9,0.5-4.7,0.6-6.7,0.8c-3.9,0.4-16.6,0-16.6,0
+                                          C0.8,38.4,0,39.2,0,40c0,0.8,0.8,1.6,1.6,1.6c0,0,12.2,0,16.6,0c1.6,0,4.8,0.3,6.7,0.8c2.3,0.6,4.3,0.8,6.3,2.4
+                                          c1.6,1.2,3.2,2.8,4.3,4.4c1.2,2,2.1,3.9,2.4,6.3c0.2,1.7,0.7,4.7,0.8,6.7c0.2,4,0,16.2,0,16.2c0,0.8,0.8,1.6,1.6,1.6
+                                          s1.6-0.8,1.6-1.6c0,0,0-12.3,0-16.2c0-1.6,0.5-5.1,0.8-6.7c0.5-2.3,0.8-4.4,2.4-6.3c1.2-1.6,2.8-3.2,4.3-4.4c2-1.2,3.9-2,6.3-2.4
+                                          c1.8-0.3,5.1-0.7,7.1-0.8c3.5-0.2,15.8,0,15.8,0c0.8,0,1.6-0.8,1.6-1.6C80,39.2,79.2,38.4,78.4,38.4C78.4,38.4,78.4,38.4,78.4,38.4z
+                                          "></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== End Section ==================== -->
+
+
+
+                <!-- ==================== Start Testimonials ==================== -->
+
+                <!-- <section class="testim-style3">
+                    <div class="container">
+                        <div class="sec-head tobotm" data-ui-animate data-delay="0.2">
+                            <h2 class="fs-100 fw-300">“clients <br> testimonials”</h2>
+                        </div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item v-align-between h-100 border-radius-30px">
+                                        <div>
+                                            <div class="info d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="fit-img h-80px w-80px border-radius-50 o-hidden">
+                                                        <img src="assets/imgs/testim/1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="mt-30px">
+                                                <h5 class="fw-300">“Working with was an outstanding experience.
+                                                    Their ability to understand our vision.”</h5>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="mt-80px pl-30px ml-30px line-left border-color-transparent-white-light">
+                                            <h6 class="fs-18">Carol Buyers</h6>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">Project Manager,
+                                                Buildwave</span>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">New York City, New York</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item v-align-between h-100 border-radius-30px">
+                                        <div>
+                                            <div class="info d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="fit-img h-80px w-80px border-radius-50 o-hidden">
+                                                        <img src="assets/imgs/testim/2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div
+                                            class="mt-80px pl-30px ml-30px line-left border-color-transparent-white-light">
+                                            <h6 class="fs-18">B. Gordon</h6>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">Project Manager,
+                                                Buildwave</span>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">New York City, New York</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item v-align-between h-100 border-radius-30px">
+                                        <div>
+                                            <div class="info d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="fit-img h-80px w-80px border-radius-50 o-hidden">
+                                                        <img src="assets/imgs/testim/3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="mt-30px">
+                                                <h5 class="fw-300">“ The team is truly exceptional!”</h5>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="mt-80px pl-30px ml-30px line-left border-color-transparent-white-light">
+                                            <h6 class="fs-18">Carol Buyers</h6>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">Project Manager,
+                                                Buildwave</span>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">New York City, New York</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item v-align-between h-100 border-radius-30px">
+                                        <div>
+                                            <div class="info d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="fit-img h-80px w-80px border-radius-50 o-hidden">
+                                                        <img src="assets/imgs/testim/4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                            
+                                                </div>
+                                            </div>
+                                            <div class="mt-30px">
+                                                <h5 class="fw-300">“Working with was an outstanding experience.
+                                                    Their ability to understand our vision.”</h5>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="mt-80px pl-30px ml-30px line-left border-color-transparent-white-light">
+                                            <h6 class="fs-18">Denis Slavska</h6>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">CTO, Ailitic</span>
+                                            <span class="opacity-7 fs-13 d-block mt-5px">New York City, New
+                                                Yorkitic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!-- ==================== End Testimonials ==================== -->
+
+
+
+                <!-- ==================== Start Section ==================== -->
+
+                <div class="main-marq xlrg with-shad">
+                    <div class="slide-har st1 opacity-5">
+                        <div class="box d-flex align-items-center">
+                            <div class="item">
+                                <h4>Awards</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4>Rcognition</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4>Awards</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4>Rcognition</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box d-flex align-items-center">
+                            <div class="item">
+                                <h4>Awards</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4>Rcognition</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4>Awards</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h4>Rcognition</h4>
+                            </div>
+                            <div class="item">
+                                <div class="w-70px">
+                                    <img src="assets/imgs/star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==================== End Section ==================== -->
+
+
+
+                <!-- ==================== Start section ==================== -->
+
+                <section class="awards-reval position-relative">
+                    <div class="container" data-ui-animate data-delay="0.2">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="item-row hover-reveal-item">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div>
+                                                <span class="award-year">2025</span>
+                                                <span class="award-text">Published My First Paper</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="award-position">iConSCEPT 2025</span>
+                                                <span class="award-icon">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-reveal-img bg-img"
+                                        data-background="assets/imgs/awards/paper.png"></div>
+                                </div>
+                                <div class="item-row hover-reveal-item">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div>
+                                                <span class="award-year">2025</span>
+                                                <span class="award-text">AlgoGeeks Club</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="award-position">President</span>
+                                                <span class="award-icon">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-reveal-img bg-img"
+                                        data-background="assets/imgs/awards/a2.png"></div>
+                                </div>
+                                <div class="item-row hover-reveal-item">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div>
+                                                <span class="award-year">2024</span>
+                                                <span class="award-text">PSG iTech Hackfest</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="award-position">Top 10</span>
+                                                <span class="award-icon">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-reveal-img bg-img"
+                                        data-background="assets/imgs/awards/itech.png"></div>
+                                </div>
+                                <div class="item-row hover-reveal-item">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div>
+                                                <span class="award-year">2023</span>
+                                                <span class="award-text">Best Content Curator</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="award-position">Magazine</span>
+                                                <span class="award-icon">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-reveal-img bg-img"
+                                        data-background="assets/imgs/awards/award-4.jpg"></div>
+                                </div>
+                                <div class="item-row hover-reveal-item">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div>
+                                                <span class="award-year">2023</span>
+                                                <span class="award-text">Article on Medium</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="award-position">Blockchain for Healthcare</span>
+                                                <span class="award-icon">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-reveal-img bg-img"
+                                        data-background="assets/imgs/awards/medium.png"></div>
+                                </div>
+                                <div class="item-row hover-reveal-item">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div>
+                                                <span class="award-year">2022</span>
+                                                <span class="award-text">Best Designer</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="award-position">UI/UX design</span>
+                                                <span class="award-icon">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-reveal-img bg-img"
+                                        data-background="assets/imgs/awards/award-6.jpg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shape-top-right w-200px opacity-1" data-speed="0.7" data-lag="0">
+                        <img src="assets/imgs/mshap1.png" alt="">
+                    </div>
+                </section>
+
+                <!-- ==================== End section ==================== -->
+
+
+
+                <!-- ==================== Start section ==================== -->
+
+                <!-- <div class="container-xxl" data-ui-animate data-delay="0.2">
+                    <div class="o-hidden border-radius-100px h-700px">
+                        <div class="bg-img background-position-center h-800px"
+                            data-background="assets/imgs/intro/f2.png" data-speed="0.5" data-lag="0">
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- ==================== End section ==================== -->
+
+
+
+                <!-- ==================== Start Blog ==================== -->
+
+                <section class="blog-style2" id="blog">
+                    <div class="container">
+                        <div class="sec-head bord mb-80px" data-ui-animate data-delay="0.2">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h6 class="text-uppercase">Blogs</h6>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div>
+                                        <h2 class="fs-60 text-uppercase"><span class="opacity-7 d-inline">Latest</span>
+                                            <br> creative thinking journals.
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 d-flex justify-content-end">
+                                    <div>
+                                        <a href="blog.html" class="butn-more d-flex align-items-center">
+                                            <span class="text-uppercase fs-14 fw-500">All Posts</span>
+                                            <span class="arrow-icon">
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                    </path>
+                                                </svg>
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container" data-ui-animate data-delay="0.4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item" data-toggle="modal" data-target="#comingSoonModal">
+                                        <div class="fit-img h-350px border-radius-30px o-hidden">
+                                            <img src="assets/imgs/blog/tor3.png" alt="">
+                                        </div>
+                                        <div class="text mt-30px">
+                                            <div class="info fs-13 mb-20px d-flex align-items-center">
+                                                <span class="opacity-7">Design</span>
+                                                <span class="mr-15px ml-15px opacity-7">|</span>
+                                                <span class="fs-14 opacity-7">06 Dec 2025</span>
+                                            </div>
+                                            <h5>Deanonymizing of TOR Networks</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item" data-toggle="modal" data-target="#comingSoonModal">
+                                        <div class="fit-img h-350px border-radius-30px o-hidden">
+                                            <img src="assets/imgs/blog/hackthon.png" alt="">
+                                        </div>
+                                        <div class="text mt-30px">
+                                            <div class="info fs-13 mb-20px d-flex align-items-center">
+                                                <span class="opacity-7">Design</span>
+                                                <span class="mr-15px ml-15px opacity-7">|</span>
+                                                <span class="fs-14 opacity-7">25 Aug 2024</span>
+                                            </div>
+                                            <h5>Hackathon: From Ideas to Impact</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item" data-toggle="modal" data-target="#comingSoonModal">
+                                        <div class="fit-img h-350px border-radius-30px o-hidden">
+                                            <img src="assets/imgs/blog/myteam.png" alt="">
+                                        </div>
+                                        <div class="text mt-30px">
+                                            <div class="info fs-13 mb-20px d-flex align-items-center">
+                                                <span class="opacity-7">Design</span>
+                                                <span class="mr-15px ml-15px opacity-7">|</span>
+                                                <span class="fs-14 opacity-7">25 Aug 2024</span>
+                                            </div>
+                                            <h5>My Driving Force: My Crew</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item" data-toggle="modal" data-target="#comingSoonModal">
+                                        <div class="fit-img h-350px border-radius-30px o-hidden">
+                                            <img src="assets/imgs/blog/mne.png" alt="">
+                                        </div>
+                                        <div class="text mt-30px">
+                                            <div class="info fs-13 mb-20px d-flex align-items-center">
+                                                <span class="opacity-7">Design</span>
+                                                <span class="mr-15px ml-15px opacity-7">|</span>
+                                                <span class="fs-14 opacity-7">25 Aug 2024</span>
+                                            </div>
+                                            <h5>An Unpredictable Algorithm:<br> My Unplugged Journey</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==================== End Blog ==================== -->
+
+
+
+                <!-- ==================== Start Contact ==================== -->
+
+                <section class="contact-style1 pt-0" id="contact">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11 position-relative" data-ui-animate data-delay="0.2">
+                                <div class="box">
+                                    <div class="sec-head text-align-center mb-80px">
+                                        <h2 class="fs-60 mb-15px">Let’s work together!</h2>
+                                    </div>
+                                    <div class="contact-form">
+                                        <form id="contact-form" method="post" action="contact.php">
+
+                                            <div class="messages"></div>
+
+                                            <div class="controls row">
+
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-30px">
+                                                        <label for="form_name">Full Name <span
+                                                                class="star">*</span></label>
+                                                        <input id="form_name" type="text" name="name"
+                                                            placeholder="Your full name" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-30px">
+                                                        <label for="form_email">Email Address <span
+                                                                class="star">*</span></label>
+                                                        <input id="form_email" type="email" name="email"
+                                                            placeholder="Your email address" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-group mb-30px">
+                                                        <label for="form_subject">Subject <span
+                                                                class="star">*</span></label>
+                                                        <input id="form_subject" type="text" name="subject"
+                                                            placeholder="subject" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="form_message">Message</label>
+                                                        <textarea id="form_message" name="message"
+                                                            placeholder="Write your message here..." rows="4"
+                                                            required="required"></textarea>
+                                                    </div>
+                                                    <div class="mt-60px d-flex justify-content-center">
+                                                        <button type="submit"
+                                                            class="butn-arrow butn-rounded main-colorbg mt-30px">
+                                                            <span class="text-uppercase fs-14 fw-500">Send a
+                                                                Message</span>
+                                                            <span class="arrow-icon">
+                                                                <svg viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                                    </path>
+                                                                </svg>
+                                                                <svg viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
+                                                                    </path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="shape-bottom-left w-250px opacity-5" data-speed="0.7" data-lag="0">
+                                    <img src="assets/imgs/mshap3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==================== End Contact ==================== -->
+
+
+
+                <!-- ==================== Start Footer ==================== -->
+
+                <footer class="footer-style4">
+                    <div class="container pb-80px">
+                        <div class="row">
+                            <div class="col-lg-3" data-ui-animate data-delay="0.2">
+                                <div class="logo">
+                                    <span class="logo-text">MEP</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" data-ui-animate data-delay="0.3">
+                                <div class="column">
+                                    <h6 class="sub-title mb-30px">Social Media</h6>
+                                    <ul class="rest">
+                                        <li class="hover-this cursor-pointer">
+                                            <a href="#0" class="hover-anim">LinkedIn</a>
+                                        </li>
+                                        <li class="hover-this cursor-pointer">
+                                            <a href="#0" class="hover-anim">Facebook</a>
+                                        </li>
+                                        <li class="hover-this cursor-pointer">
+                                            <a href="#0" class="hover-anim">Instagram</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3" data-ui-animate data-delay="0.4">
+                                <div class="column">
+                                    <h6 class="sub-title mb-30px">Contact : </h6>
+                                    <p><i class="fas fa-envelope"></i> Email : mepjahn@gmail.com</p>
+                                    <h5 class="mt-15px">
+                                        <a href="#0" class="underline">+91 9080795657</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container pt-30px pb-30px line-top border-color-transparent-white-light">
+                    </div>
+                </footer>
+
+                <!-- ==================== End Footer ==================== -->
+
+            </main>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+
+    <!-- plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smoother-script.js"></script>
+    <script src="assets/js/springer.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        (() => {
+            const canvas = document.getElementById("glcanvas");
+            const gl = canvas.getContext("webgl");
+            const errEl = document.getElementById("err");
+
+            function resize() {
+                const d = window.devicePixelRatio || 1;
+                canvas.width = canvas.clientWidth * d;
+                canvas.height = canvas.clientHeight * d;
+                gl.viewport(0,0,canvas.width,canvas.height);
+            }
+            resize();
+            addEventListener("resize", resize);
+
+            const vert = `
+                attribute vec2 pos;
+                void main() {
+                  gl_Position = vec4(pos, 0.0, 1.0);
+                }
+            `;
+
+            // Your shader, adapted to WebGL1
+            const frag = `
+                precision highp float;
+
+                uniform vec2 u_res;
+                uniform float u_time;
+                uniform float u_speed;
+                uniform float u_mode;
+
+                void main() {
+                  vec2 FC = gl_FragCoord.xy;
+                  float t = u_time * u_speed;
+                  vec2 r = u_res;
+                  vec2 p = (FC * 2.0 - r) / r.y;
+
+                  vec3 c = vec3(0.0);
+
+                  vec3 baseColor = mix(vec3(0.34, 0.30, 0.24), vec3(0.9, 0.85, 0.8), u_mode);
+
+                  float intensity = mix(0.015, 0.008, u_mode);
+
+                  for (float i = 0.0; i < 42.0; i++) {
+                    float a = i / 1.5 + t * 0.5;
+
+                    vec2 q = p;
+                    q.x = q.x + sin(q.y * 19.0 + t * 2.0 + i) * 
+                          29.0 * smoothstep(0.0, -2.0, q.y);
+
+                    float d = length(q - vec2(cos(a), sin(a)) * 
+                                        (0.4 * smoothstep(0.0, 0.5, -q.y)));
+
+                    c = c + baseColor * (intensity / d);
+                  }
+
+                  float brightness = mix(0.05, 0.2, u_mode);
+                  vec3 col = c * c + brightness;
+                  gl_FragColor = vec4(col, 1.0);
+                }
+            `;
+
+            function compile(src, type) {
+                const s = gl.createShader(type);
+                gl.shaderSource(s, src);
+                gl.compileShader(s);
+                if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+                  const msg = gl.getShaderInfoLog(s);
+                  throw new Error(msg);
+                }
+                return s;
+            }
+
+            function link(vs, fs) {
+                const p = gl.createProgram();
+                gl.attachShader(p, vs);
+                gl.attachShader(p, fs);
+                gl.bindAttribLocation(p, 0, "pos");
+                gl.linkProgram(p);
+                if (!gl.getProgramParameter(p, gl.LINK_STATUS)) {
+                  throw new Error(gl.getProgramInfoLog(p));
+                }
+                return p;
+            }
+
+            let program;
+            try {
+                const vs = compile(vert, gl.VERTEX_SHADER);
+                const fs = compile(frag, gl.FRAGMENT_SHADER);
+                program = link(vs, fs);
+            } catch (e) {
+                errEl.style.display = "block";
+                errEl.textContent = e.message;
+                console.error(e);
+                return;
+            }
+
+            gl.useProgram(program);
+
+            const buf = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+                -1,-1,   3,-1,   -1,3
+            ]), gl.STATIC_DRAW);
+
+            gl.enableVertexAttribArray(0);
+            gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+
+            const u_res   = gl.getUniformLocation(program, "u_res");
+            const u_time  = gl.getUniformLocation(program, "u_time");
+            const u_speed = gl.getUniformLocation(program, "u_speed");
+            const u_mode  = gl.getUniformLocation(program, "u_mode");
+
+            let start = performance.now();
+
+            function draw() {
+                const now = performance.now();
+                const t = (now - start) * 0.001;
+
+                gl.uniform2f(u_res, canvas.width, canvas.height);
+                gl.uniform1f(u_time, t);
+                gl.uniform1f(u_speed, 1.0);
+                gl.uniform1f(u_mode, document.body.classList.contains('light') ? 1.0 : 0.0);
+
+                gl.drawArrays(gl.TRIANGLES, 0, 3);
+                requestAnimationFrame(draw);
+            }
+
+            draw();
+        })();
+    </script>
+
+    <!-- Coming Soon Modal -->
+    <div class="modal fade" id="comingSoonModal" tabindex="-1" role="dialog" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content elegant-modal">
+                <div class="modal-body text-center">
+                    <h2 class="coming-soon-title">Coming Soon...</h2>
+                    <p class="coming-soon-text">Stay tuned for more updates!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
